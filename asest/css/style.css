@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: ; */
+}
+.form-container{
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 10px !important;
+}
