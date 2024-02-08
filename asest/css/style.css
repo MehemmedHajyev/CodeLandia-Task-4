@@ -1,11 +1,34 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* background: ; */
 }
-.form-container{
+header{
+    height: 200vh;
+}
+
+.form-container {
     max-width: 900px;
     margin: 50px auto;
     border-radius: 10px !important;
+    height: 500px;
+    display: flex;
+}
+.nHuSJZ{
+    background-image: url(../images//logo/download.svg);
+    background-repeat: no-repeat;
+}
+.AV8G6s{
+    opacity: 0;
+}
+.header-image-container{
+    background: url(../images/logo/2a1a02_dc666ebc56e640039ae383e74c2f12a1~mv2.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    max-width: 1170px;
+    margin: 100px auto;
+    height: 500px;
+    border: 1px solid red;
 }

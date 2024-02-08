@@ -25,7 +25,7 @@ let persons = [
   },
 ];
 
-loginBtn.addEventListener("click", (e) => {
+loginBtn?.addEventListener("click", (e) => {
   e.preventDefault();
   
   let enteredEmail = document.querySelector(".login-email").value;
@@ -70,3 +70,7 @@ loginBtn.addEventListener("click", (e) => {
     }).showToast();
   }
 });
+
+console.log('salammm');
+
+
