@@ -29,7 +29,7 @@ loginBtn?.addEventListener("click", (e) => {
         }).showToast();
         // Burada yönlendirme yapılabilir
         setTimeout(() => {
-          window.location.href = "index.html";
+          window.location.href = "home.html";
         }, 3000);
       } else {
         Toastify({
@@ -101,7 +101,7 @@ registerBtn?.addEventListener("click", (e) => {
         backgroundColor: "green",
       }).showToast();
       setTimeout(() => {
-        window.location.href = "index.html";
+        window.location.href = "home.html";
       }, 1000);
     }
   } else {

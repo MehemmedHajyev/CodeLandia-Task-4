@@ -9,6 +9,6 @@ logOut.addEventListener("click", (e) => {
     backgroundColor: "green",
   }).showToast();
   setTimeout(() => {
-    window.location.href = "login-reg.html";
+    window.location.href = "index.html";
   }, 1000);
 });
