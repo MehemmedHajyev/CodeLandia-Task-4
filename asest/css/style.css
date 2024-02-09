@@ -214,10 +214,6 @@ nav button {
         display: none
     }
 }
-
-;
-
-
 @media screen and (max-width: 800px) {
     nav div {
         width: 100%;
