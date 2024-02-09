@@ -365,3 +365,46 @@ nav button {
 }
 
 /* /////////////////// */
+
+
+
+
+/* shooping  Start*/
+.grid-container {
+    max-width: 1170px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+}
+
+.grid-card {
+    min-width: 280px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.grid-card img{
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    aspect-ratio: 2/1.5;
+    transition: all .5s;
+
+}
+.grid-card img:hover{
+    transform: scale(1.1);
+}
+.grid-card-content button{
+    cursor: pointer;
+    border: 1px solid #FF842D !important;
+}
+
+.grid-card-content button img{
+    width: 50px;
+}
+.shop-icon{
+cursor: pointer;
+}
+
+/* shooping End*/
