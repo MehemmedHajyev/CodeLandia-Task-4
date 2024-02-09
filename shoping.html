@@ -10,6 +10,11 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="asest/css/style.css" />
     <link
   </head>
@@ -44,25 +49,82 @@
               >
             </div>
 
-            <form class="d-flex align-items-center justify-content-center" action="#">
+            <form
+              class="d-flex align-items-center justify-content-center"
+              action="#"
+            >
               <a href="index.html" class="btn btn-outline-primary me-3">
                 Login
               </a>
               <div class="shop-icon">
                 <a href="" class="">
-                    <img src="asest/images/gif/download.png"  width="30" height="30px" class="d-inline-block">    
-                    </a>
+                  <img
+                    src="asest/images/gif/download.png"
+                    width="30"
+                    height="30px"
+                    class="d-inline-block"
+                  />
+                </a>
               </div>
-              
             </form>
           </div>
         </div>
       </nav>
     </header>
-    <main class="mt-5">
-      <div class="grid-container">
+    <nav
+      class="container-md d-flex justify-content-between align-items-center pt-4 pb-4 mt-5 pt-5"
+    >
+      <a
+        class="d-flex flex-column justify-content-between align-items-center link-dark text-decoration-none"
+        href="home.html"
+        ><span class="fs-4" style="font-family: cursive">Amy Kahler</span
+        ><span class="fs-6">Dietitian</span></a
+      >
+      <div id="nav" class="d-flex flex-column gap-3">
+        <!-- <a href="" class="login link-dark text-decoration-none"><i class="fa-solid fa-circle-user me-2"></i> Log In</a> -->
+        <ul class="d-flex list-unstyled gap-3">
+          <li><a href="#" class="link-dark text-decoration-none">About</a></li>
+          <li>
+            <a href="shoping.html" class="link-dark text-decoration-none"
+              >Shooping</a
+            >
+          </li>
+          <li>
+            <a href="#" class="link-dark text-decoration-none">Pricing Plans</a>
+          </li>
+          <li>
+            <a href="#" class="link-dark text-decoration-none">Programs</a>
+          </li>
+          <li><a href="#" class="link-dark text-decoration-none">Blog</a></li>
+          <li>
+            <a href="#x" class="link-dark text-decoration-none">Contact</a>
+          </li>
+        </ul>
       </div>
+      <button id="hamburger" class="border-0 bg-body fs-4">
+        <i id="icon" class="fa-solid fa-bars-staggered"></i>
+      </button>
+      <!-- <i class="fa-solid fa-xmark"></i> -->
+    </nav>
+    <main class="mt-5">
+      <div class="grid-container"></div>
     </main>
+
+    <script>
+      const hamburger = document.querySelector("#hamburger");
+      const hamburgerIcon = document.querySelector("#icon");
+      const nav = document.querySelector("#nav");
+
+      hamburger.addEventListener("click", () => {
+        if (nav.classList.contains("opened")) {
+          nav.classList.remove("opened");
+          hamburgerIcon.classList.replace("fa-x", "fa-bars-staggered");
+        } else {
+          nav.classList.add("opened");
+          hamburgerIcon.classList.replace("fa-bars-staggered", "fa-x");
+        }
+      });
+    </script>
     <script src="asest/js/shopping.js"></script>
   </body>
 </html>

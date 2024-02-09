@@ -10,6 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
@@ -177,6 +178,24 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script>
+      
+      const hamburger = document.querySelector('#hamburger');
+        const hamburgerIcon = document.querySelector('#icon');
+        const nav = document.querySelector('#nav');
+
+        hamburger.addEventListener('click', () => {
+            if(nav.classList.contains('opened')){
+                nav.classList.remove('opened');
+                hamburgerIcon.classList.replace('fa-x', 'fa-bars-staggered');
+            }else{
+                nav.classList.add('opened');
+                hamburgerIcon.classList.replace('fa-bars-staggered', 'fa-x');
+            }
+        })
+    
+    </script>
     <script src="asest/js/app.js"></script>
     <script src="asest/js/main.js"></script>
   </body>
